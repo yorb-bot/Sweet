@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sweet Message</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            margin: 0;
+        }
+
+        .card {
+            background: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            text-align: center;
+            width: 350px;
+            position: relative;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            color: #ff6b81;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #ff6b81;
+            color: #fff;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4757;
+        }
+
+        .funny-text {
+            display: none;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #ffa502;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Hey You! 😄</h1>
+        <p>Just wanted to remind you that you’re awesome…</p>
+        <button onclick="showFunny()">Click me for a surprise!</button>
+        <div class="funny-text" id="funny">…and also slightly weird, but that’s why I like you! 😂💖</div>
+    </div>
+
+    <script>
+        function showFunny() {
+            document.getElementById("funny").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
